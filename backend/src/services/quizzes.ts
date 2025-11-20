@@ -1,7 +1,10 @@
+import type { Prisma } from '@prisma/client';
 import prisma from '../lib/prisma';
 import type { QuizPayload } from '../validators/quiz';
 
-type QuizWithCount = Awaited<ReturnType<typeof prisma.quiz.findMany>>[number];
+type QuizWithCount = Prisma.QuizGetPayload<{
+  include: { _count: { select: { questions: true } } };
+}>;
 
 const questionInclude = {
   include: { options: true },
