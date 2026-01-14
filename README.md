@@ -22,7 +22,7 @@ Quiz Builder is a full-stack application for creating, managing, and reviewing c
 - React with Vite
 - Redux Toolkit + React Redux
 - React Router for routing
-- React Hook Form + Zodfor form handling and validation
+- React Hook Form + Zod for form handling and validation
 - Tailwind CSS utility classes for styling
 - TypeScript-first setup with strict compiler settings
 
